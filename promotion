@@ -2,6 +2,8 @@
 
 
 
+msg=$(git log --format=%s -1)
+git reset HEAD^
 
 
 
