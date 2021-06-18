@@ -19,6 +19,8 @@ git reset HEAD^
 
 
 
+until git diff --quiet; do
+    git add -p <<< y
 
 
 
