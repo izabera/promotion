@@ -39,3 +39,13 @@ until git diff --quiet; do
 
 
 ######
+
+
+    git commit -m "$msg - part $((++i))"
+done
+
+
+
+
+
+######
