@@ -1,51 +1,9 @@
 #!/bin/bash
 
-
-
 msg=$(git log --format=%s -1)
 git reset HEAD^
 
-
-
-
-######
-
-
-
-
-
-
-######
-
-
-
 until git diff --quiet; do
     git add -p <<< y
-
-
-
-######
-
-
-
-
-
-
-######
-
-
-
-
-
-
-######
-
-
     git commit -m "$msg - part $((++i))"
 done
-
-
-
-
-
-######
